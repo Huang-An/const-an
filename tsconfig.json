@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "strict": true,
+    "allowJs": false,
+    "outDir": "dist",
+    "sourceMap": false,
+    "target": "esnext",
+    "module": "esnext",
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "lib": ["esnext", "dom"]
+  },
+
+  "include": ["packages/*/src"]
+}
