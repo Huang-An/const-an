@@ -1,0 +1,22 @@
+{
+  "name": "@const-an/rules",
+  "description": "@const-an/rules",
+  "author": "const-an",
+  "version": "0.0.0",
+  "main": "dist/rules.cjs.js",
+  "module": "dist/rules.esm.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "buildOptions": {
+    "formats": [
+      "esm",
+      "cjs"
+    ]
+  },
+  "keywords": [
+    "const-an",
+    "rules"
+  ],
+  "license": "MIT"
+}
