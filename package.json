@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "commit": "git-cz",
     "build": "node scripts/build.js -m production"
   },
   "gitHooks": {
@@ -17,12 +18,19 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
     "@typescript-eslint/parser": "^4.25.0",
     "babel-loader": "^8.2.2",
     "chalk": "^4.1.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.27.0",
     "execa": "^5.0.0",
     "lerna": "^4.0.0",
