@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "commit": "git-cz",
-    "build": "node scripts/build.js -m production"
+    "build": "node scripts/build.js -m production",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
@@ -30,6 +31,7 @@
     "babel-loader": "^8.2.2",
     "chalk": "^4.1.1",
     "commitizen": "^4.2.4",
+    "conventional-changelog-cli": "^2.1.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.27.0",
     "execa": "^5.0.0",
