@@ -1,0 +1,26 @@
+{
+  "name": "@const-an/{{name}}",
+  "description": "@const-an/{{name}}",
+  "author": "const-an",
+  "version": "0.0.0",
+  "main": "dist/{{name}}.cjs.js",
+  "module": "dist/{{name}}.esm.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "buildOptions": {
+    "formats": [
+      {{#if esm}}
+      "esm",
+      {{/if}}
+      {{#if cjs}}
+      "cjs"
+      {{/if}}
+    ]
+  },
+  "keywords": [
+    "const-an",
+    "{{name}}"
+  ],
+  "license": "MIT"
+}
