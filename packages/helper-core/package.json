@@ -2,7 +2,7 @@
   "name": "@const-an/helper-core",
   "description": "@const-an/helper-core",
   "author": "const-an",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/helper-core.cjs.js",
   "module": "dist/helper-core.esm.js",
   "publishConfig": {

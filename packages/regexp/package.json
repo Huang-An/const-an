@@ -2,7 +2,7 @@
   "name": "@const-an/regexp",
   "description": "@const-an/regexp",
   "author": "const-an",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "main": "dist/regexp.cjs.js",
   "module": "dist/regexp.esm.js",
   "publishConfig": {
