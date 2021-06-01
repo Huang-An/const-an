@@ -1,10 +1,10 @@
 {
-  "name": "@const-an/rules",
-  "description": "@const-an/rules",
+  "name": "@const-an/regexp",
+  "description": "@const-an/regexp",
   "author": "const-an",
   "version": "0.0.0",
-  "main": "dist/rules.cjs.js",
-  "module": "dist/rules.esm.js",
+  "main": "dist/regexp.cjs.js",
+  "module": "dist/regexp.esm.js",
   "publishConfig": {
     "access": "public"
   },
@@ -16,7 +16,7 @@
   },
   "keywords": [
     "const-an",
-    "rules"
+    "regexp"
   ],
   "license": "MIT"
 }
