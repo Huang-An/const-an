@@ -20,6 +20,20 @@ async function build(package) {
   await execa('webpack', ['--env', `mode=${mode}`, `workspace=${workspace}`, `package=${package}`], {
     stdio: 'inherit'
   })
+
+  if (!pkg.types) return
+
+  // build types
+  const { Extractor, ExtractorConfig } = require('@microsoft/api-extractor')
+
+  const extractorConfigPath = path.resolve(pkgDir, 'api-extractor.json')
+
+  const extractorConfig = ExtractorConfig.loadFileAndPrepare(extractorConfigPath)
+
+  Extractor.invoke(extractorConfig, {
+    localBuild: true,
+    showVerboseMessages: true
+  })
 }
 
 async function runByParallel(maxConcurrency, packages, iteratorFn) {

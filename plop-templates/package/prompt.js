@@ -48,6 +48,11 @@ module.exports = {
           esm: data.formats.includes('esm'),
           cjs: data.formats.includes('cjs')
         }
+      },
+      {
+        type: 'add',
+        path: `packages/${name}/api-extractor.json`,
+        templateFile: 'plop-templates/package/api-extractor.json.hbs'
       }
     ]
 

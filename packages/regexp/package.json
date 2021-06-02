@@ -5,6 +5,11 @@
   "version": "0.0.3",
   "main": "dist/regexp.cjs.js",
   "module": "dist/regexp.esm.js",
+  "types": "dist/regexp.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "publishConfig": {
     "access": "public"
   },
