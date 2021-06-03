@@ -3,6 +3,12 @@ export declare const checkBrowser: () => string;
 
 export declare const checkSystem: () => string;
 
+export declare const createPromise: <R = any>() => {
+    promise: Promise<R>;
+    resolve: (value: R | PromiseLike<R>) => void;
+    reject: (reason?: any) => void;
+};
+
 export declare const getURLParam: (string: string) => string;
 
 export declare const getURLParamByAll: () => {
