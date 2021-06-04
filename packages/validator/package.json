@@ -1,0 +1,31 @@
+{
+  "name": "@const-an/validator",
+  "description": "@const-an/validator",
+  "author": "const-an",
+  "version": "0.0.0",
+  "main": "dist/validator.cjs.js",
+  "module": "dist/validator.esm.js",
+  "types": "dist/validator.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "buildOptions": {
+    "formats": [
+      "esm",
+      "cjs"
+    ]
+  },
+  "keywords": [
+    "const-an",
+    "validator"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@const-an/helper-core": "^0.0.5",
+    "@const-an/regexp": "^0.0.5"
+  }
+}
