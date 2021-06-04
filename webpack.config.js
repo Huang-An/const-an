@@ -45,7 +45,6 @@ module.exports = function (env) {
       path: resolve('dist'),
       filename: `${package}.cjs.js`,
       library: {
-        name: package,
         type: 'commonjs2'
       }
     }
