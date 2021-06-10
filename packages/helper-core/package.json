@@ -8,6 +8,7 @@
   "types": "dist/helper-core.d.ts",
   "files": [
     "dist",
+    "README.md",
     "package.json"
   ],
   "publishConfig": {

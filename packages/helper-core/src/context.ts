@@ -1,5 +1,5 @@
 export const checkBrowser = (): string => {
-  if (!window) return 'unknown'
+  if (!window) return 'UNKNOWN'
 
   const ua: string = window.navigator.userAgent.toLowerCase()
   const micromessenger: RegExpMatchArray = ua.match(/MicroMessenger/i) || []
@@ -12,7 +12,7 @@ export const checkBrowser = (): string => {
 
   if (alipay[0] === 'alipay') return 'ALIPAY'
 
-  return 'unknown'
+  return 'UNKNOWN'
 }
 
 export const checkSystem = (): string => {
