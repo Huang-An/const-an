@@ -8,6 +8,7 @@
   "types": "dist/regexp.d.ts",
   "files": [
     "dist",
+    "README.md",
     "package.json"
   ],
   "publishConfig": {
