@@ -20,4 +20,6 @@ export declare const space: RegExp;
 
 export declare const tel: RegExp;
 
+export declare const websocket: RegExp;
+
 export { }
