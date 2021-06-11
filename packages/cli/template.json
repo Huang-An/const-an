@@ -1,0 +1,7 @@
+{
+  "ADMIN-WEB": {
+    "desc": "后台管理系统（vue + typescript + elementui）",
+    "repo": "https://github.com/Huang-An/utils.git"
+  },
+  "H5": { "desc": "H5（vue + typescript + vant）", "repo": "https://github.com/Huang-An/utils.git" }
+}

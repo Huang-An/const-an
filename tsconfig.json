@@ -16,6 +16,6 @@
     "experimentalDecorators": true,
     "lib": ["esnext", "dom"]
   },
-
+  "exclude": ["packages/cli"],
   "include": ["packages/*/src"]
 }

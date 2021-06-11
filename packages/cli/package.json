@@ -1,0 +1,29 @@
+{
+  "name": "@const-an/cli",
+  "version": "0.0.1",
+  "description": "@const-an/cli",
+  "bin": {
+    "const-an-cli": "bin/app.js"
+  },
+  "keywords": [
+    "@const-an",
+    "cli"
+  ],
+  "author": "const-an",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "commander": "^7.2.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^8.1.0",
+    "ora": "^5.4.1",
+    "semver": "^7.3.5",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "engines": {
+    "node": "^12.0.0 || >= 14.0.0"
+  }
+}
