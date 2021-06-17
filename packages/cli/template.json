@@ -1,7 +1,6 @@
 {
   "ADMIN-WEB": {
-    "desc": "后台管理系统（vue + typescript + elementui）",
-    "repo": "https://github.com/Huang-An/utils.git"
-  },
-  "H5": { "desc": "H5（vue + typescript + vant）", "repo": "https://github.com/Huang-An/utils.git" }
+    "desc": "web-admin 后台管理系统（vue2 + typescript + element-ui）",
+    "repo": "https://github.com/Huang-An/web-admin-template.git"
+  }
 }
