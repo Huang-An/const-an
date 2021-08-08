@@ -29,17 +29,18 @@ checkNodeVersion(requiredVersion, '@const-an/cli')
 program.version(`@const-an/cli ${require('../package').version}`, '-v, --version').usage('<command> [options]')
 
 program
-  .command('create <app-name>')
+  .command('create <project-name>')
+  .option('-c, --cache', '使用本地已经缓存的模板')
   .description('创建一个项目')
-  .action((name, options) => {
-    require('../lib/create')(name, options)
+  .action((projectName, options) => {
+    require('../lib/create')(projectName, options)
   })
 
 program
   .command('add <template-name> <repo> [desc]')
   .description('添加一个模板')
-  .action((name, repo, desc) => {
-    require('../lib/preset').add(name, repo, desc)
+  .action((templateName, repo, desc) => {
+    require('../lib/preset').add(templateName, repo, desc)
   })
 
 program.parse(process.argv)

@@ -16,16 +16,16 @@ async function prompt() {
   const presets = require('./preset').presets()
 
   if (!presets.length) {
-    console.error(chalk.red(`没有可选择的模板，请添加`))
+    console.error(chalk.red('没有可选择的模板，请添加'))
     exit()
   }
 
   const answers = await inquirer.prompt([
     {
-      name: 'platform',
+      name: 'templateName',
       type: 'list',
       choices: presets,
-      message: '选择项目运行的平台'
+      message: '请选择一个项目模板'
     }
   ])
 

@@ -13,22 +13,22 @@ exports.presets = () => {
   }))
 }
 
-exports.add = async (name, repo, desc = '') => {
+exports.add = async (templateName, repo, desc = '') => {
   const presets = require('../template.json')
 
-  if (presets[name]) {
-    console.log(chalk.red(`已经存在模板：${name}`))
+  if (presets[templateName]) {
+    console.log(chalk.red(`已经存在模板：${templateName}`))
     exit()
   }
 
-  presets[name] = {
+  presets[templateName] = {
     repo: repo || '',
-    desc: desc || name
+    desc: desc || templateName
   }
 
   try {
     fs.writeFileSync(path.resolve(__dirname, '../template.json'), JSON.stringify(presets))
-    console.log(`添加模板 ${name} 成功`)
+    console.log(`添加模板 ${templateName} 成功`)
   } catch (error) {
     error.error(error)
     exit()

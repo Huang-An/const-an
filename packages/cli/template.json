@@ -1,5 +1,5 @@
 {
-  "ADMIN-WEB": {
+  "vue-typescript-web-admin": {
     "desc": "web-admin 后台管理系统（vue2 + typescript + element-ui）",
     "repo": "https://github.com/Huang-An/web-admin-template.git"
   }

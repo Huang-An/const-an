@@ -7,7 +7,7 @@ const validateProjectName = require('validate-npm-package-name')
 
 const { clearConsole, exit } = require('./utils')
 
-async function create(projectName, options) {
+async function create(projectName, options = {}) {
   // 校验 projectName 是否合法
   const result = validateProjectName(projectName)
 
@@ -27,20 +27,21 @@ async function create(projectName, options) {
     exit()
   }
 
-  const cwd = process.cwd()
-  const targetDir = path.resolve(cwd, projectName)
+  const output = path.resolve(process.cwd(), projectName)
 
   // 校验是否已经存在文件目录
-  if (fs.existsSync(targetDir)) {
-    console.error(chalk.red(`${targetDir} 已经存在！`))
+  if (fs.existsSync(output)) {
+    console.error(chalk.red(`${output} 已经存在！`))
     exit()
   }
+
+  options.output = output
 
   clearConsole()
 
   const creator = new Creator(projectName, options, await prompt())
 
-  await creator.create(targetDir)
+  creator.create()
 }
 
 module.exports = (...args) => {
