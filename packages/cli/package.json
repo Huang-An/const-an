@@ -1,6 +1,6 @@
 {
   "name": "@const-an/cli",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "@const-an/cli",
   "bin": {
     "const-an-cli": "bin/app.js"
