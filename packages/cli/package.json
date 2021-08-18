@@ -21,7 +21,9 @@
     "inquirer": "^8.1.0",
     "metalsmith": "^2.3.0",
     "ora": "^5.4.1",
+    "rimraf": "^3.0.2",
     "semver": "^7.3.5",
+    "user-home": "^3.0.0",
     "validate-npm-package-name": "^3.0.0"
   },
   "engines": {
